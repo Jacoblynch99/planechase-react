@@ -4,14 +4,13 @@ import { getPokemon } from '../redux/action'
 
 const mapStateToProps = (state) => {
     return {
-        pokemon: state.pokemon,
-        pokemonDetails: state.pokemonDetails,
+        cards: cardMode,
     }
 }
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        getPokemon: () => dispatch(getPokemon()),
+        getPlanes: () => dispatch(getPlanes()),
     }
 }
 
