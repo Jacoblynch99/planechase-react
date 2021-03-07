@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const getBusinesses = () => {
+export const getPlanes = () => {
     return function (dispatch) {
         axios
             .get('/users')
@@ -17,7 +17,7 @@ export const getBusinesses = () => {
     }
 }
 
-export const getTickets = () => {
+export const getArchenemy = () => {
     return function (dispatch) {
         axios.get(`/users/tickets`).then((res) => {
             const action = {
@@ -26,39 +26,5 @@ export const getTickets = () => {
             }
             dispatch(action)
         })
-    }
-}
-
-export const createTicket = (postBody) => {
-    return function (dispatch) {
-        axios
-            .post('/users', { postBody })
-            .then((res) => {
-                const action = {
-                    type: 'POST_TICKET',
-                    value: res.data,
-                }
-                dispatch(action)
-            })
-            .catch((err) => {
-                console.log(err)
-            })
-    }
-}
-
-export const getQuotes = () => {
-    return function (dispatch) {
-        axios
-            .get('https://type.fit/api/quotes')
-            .then((res) => {
-                const action = {
-                    type: 'GET_QUOTES',
-                    value: res.data,
-                }
-                dispatch(action)
-            })
-            .catch((err) => {
-                console.log(err)
-            })
     }
 }
