@@ -20,15 +20,16 @@ const UserLanding = (props) => {
     const [unvisitedPlanes, setUnvisitedPlanes] = useState([])
 
     useEffect(() => {
-        props.getPlanes()
+        console.log('Job Done')
     }, [])
 
-    useEffect(() => {
-        setTimeout(() => {
-            setUnvisitedPlanes(props.cards)
-            console.log('job done')
-        }, 4000)
-    }, [])
+    const shuffleDeck = () => {
+        props.getPlanes()
+    }
+
+    const drawCard = () => {
+        setUnvisitedPlanes(props.cards)
+    }
 
     const consol = () => {
         console.log(unvisitedPlanes)
