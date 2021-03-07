@@ -6,7 +6,7 @@ export const getPlanes = () => {
             .get('/users')
             .then((res) => {
                 const action = {
-                    type: 'GET_BUSINESSES',
+                    type: 'GET_PLANEsS',
                     value: res.data,
                 }
                 dispatch(action)
@@ -21,7 +21,7 @@ export const getArchenemy = () => {
     return function (dispatch) {
         axios.get(`/users/tickets`).then((res) => {
             const action = {
-                type: 'GET_TICKETS',
+                type: 'GET_ARCHENEMY',
                 value: res.data,
             }
             dispatch(action)

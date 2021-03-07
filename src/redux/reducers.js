@@ -2,7 +2,7 @@ import { combineReducers } from 'redux'
 
 const planes = (state = [], action) => {
     switch (action.type) {
-        case 'GET_BUSINESSES':
+        case 'GET_PLANES':
             return action.value
         default:
             return state
@@ -11,7 +11,7 @@ const planes = (state = [], action) => {
 
 const archenemy = (state = [], action) => {
     switch (action.type) {
-        case 'GET_TICKETS':
+        case 'GET_ARCHENEMY':
             return action.value
         default:
             return state
