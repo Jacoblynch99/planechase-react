@@ -18,17 +18,21 @@ import React, { useState, useEffect } from 'react'
 
 const UserLanding = (props) => {
     const [unvisitedPlanes, setUnvisitedPlanes] = useState([])
+    const [drawnCard, setDrawnCard] = useState('')
+    const [counter, setCounter] = useState(0)
+    const [visitedPlanes, setVisitedPlanes] = useState([])
 
     useEffect(() => {
-        console.log('Job Done')
+        props.getPlanes()
     }, [])
 
     const shuffleDeck = () => {
-        props.getPlanes()
+        setUnvisitedPlanes(props.cards)
     }
 
     const drawCard = () => {
-        setUnvisitedPlanes(props.cards)
+        setDrawnCard(unvisitedPlanes[counter].imageUrl)
+        setCounter(counter + 1)
     }
 
     const consol = () => {
@@ -39,8 +43,11 @@ const UserLanding = (props) => {
         <div style={{ height: '100vh', width: '100vw' }}>
             <button onClick={consol}>console</button>
             <button onClick={shuffleDeck}>Shuffle Deck</button>
+            <button onClick={drawCard}>Draw Card</button>
 
-            {unvisitedPlanes.map((item) => {
+            <img src={drawnCard} />
+
+            {/* {unvisitedPlanes.map((item) => {
                 return (
                     <div key={item.name + item.originalText}>
                         <img
@@ -49,7 +56,7 @@ const UserLanding = (props) => {
                         />
                     </div>
                 )
-            })}
+            })} */}
         </div>
     )
 }
