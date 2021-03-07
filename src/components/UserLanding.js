@@ -22,15 +22,16 @@ const UserLanding = (props) => {
     }
 
     return (
-        <div>
-            <h1>Hello</h1>
-            <button onClick={consol}>console</button>
+        <div style={{ height: '100vh', width: '100vw' }}>
             <button onClick={() => props.getPlanes()}>fetch</button>
 
             {props.cards.map((item) => {
                 return (
                     <div key={item.name + item.originalText}>
-                        <img src={item.imageUrl}></img>
+                        <img
+                            src={item.imageUrl}
+                            style={{ height: '500px', width: '1000px' }}
+                        />
                     </div>
                 )
             })}
