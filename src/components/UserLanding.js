@@ -24,7 +24,10 @@ const UserLanding = (props) => {
     }, [])
 
     useEffect(() => {
-        setUnvisitedPlanes(props.cards)
+        setTimeout(() => {
+            setUnvisitedPlanes(props.cards)
+            console.log('job done')
+        }, 4000)
     }, [])
 
     const consol = () => {
@@ -34,6 +37,7 @@ const UserLanding = (props) => {
     return (
         <div style={{ height: '100vh', width: '100vw' }}>
             <button onClick={consol}>console</button>
+            <button onClick={shuffleDeck}>Shuffle Deck</button>
 
             {unvisitedPlanes.map((item) => {
                 return (
