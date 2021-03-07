@@ -30,7 +30,7 @@ const UserLanding = (props) => {
                     <div key={item.name + item.originalText}>
                         <img
                             src={item.imageUrl}
-                            style={{ height: '500px', width: '1000px' }}
+                            style={{ height: '500px', width: '700px' }}
                         />
                     </div>
                 )
