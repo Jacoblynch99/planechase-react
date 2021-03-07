@@ -1,10 +1,10 @@
 import { connect } from 'react-redux'
 import UserLanding from '../components/UserLanding'
-import { getPokemon } from '../redux/action'
+import { getPlanes } from '../redux/action'
 
 const mapStateToProps = (state) => {
     return {
-        cards: cardMode,
+        cards: state.planes,
     }
 }
 

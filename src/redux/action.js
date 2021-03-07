@@ -7,7 +7,7 @@ export const getPlanes = () => {
             .then((res) => {
                 const action = {
                     type: 'GET_PLANES',
-                    value: res.cards,
+                    value: res.data.cards,
                 }
                 dispatch(action)
             })
