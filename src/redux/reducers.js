@@ -9,13 +9,13 @@ const planes = (state = [], action) => {
     }
 }
 
-const archenemy = (state = [], action) => {
-    switch (action.type) {
-        case 'GET_ARCHENEMY':
-            return action.value
-        default:
-            return state
-    }
-}
+// const archenemy = (state = [], action) => {
+//     switch (action.type) {
+//         case 'GET_ARCHENEMY':
+//             return action.value
+//         default:
+//             return state
+//     }
+// }
 
-export default combineReducers({ planes, archenemy })
+export default combineReducers({ planes })
