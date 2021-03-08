@@ -36,6 +36,8 @@ const UserLanding = (props) => {
 
     const drawCard = () => {
         setDrawnCard(unvisitedPlanes[counter].imageUrl)
+        if (counter != 0) {
+        }
         setCounter(counter + 1)
     }
 
