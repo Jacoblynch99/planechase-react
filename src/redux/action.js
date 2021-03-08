@@ -3,7 +3,7 @@ import axios from 'axios'
 export const getPlanes = () => {
     return function (dispatch) {
         axios
-            .get('https://api.magicthegathering.io/v1/cards?types=plane')
+            .get('https://api.magicthegathering.io/v1/cards?set=OPCA')
             .then((res) => {
                 const action = {
                     type: 'GET_PLANES',

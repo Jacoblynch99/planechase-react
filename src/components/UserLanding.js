@@ -16,6 +16,8 @@ import {
 } from '@material-ui/core'
 import React, { useState, useEffect } from 'react'
 
+const _ = require('lodash')
+
 const UserLanding = (props) => {
     const [unvisitedPlanes, setUnvisitedPlanes] = useState([])
     const [drawnCard, setDrawnCard] = useState('')
@@ -27,7 +29,9 @@ const UserLanding = (props) => {
     }, [])
 
     const shuffleDeck = () => {
-        setUnvisitedPlanes(props.cards)
+        let tempArr = props.cards
+
+        setUnvisitedPlanes(_.shuffle(tempArr))
     }
 
     const drawCard = () => {
