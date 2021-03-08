@@ -36,11 +36,11 @@ const UserLanding = (props) => {
 
     const drawCard = () => {
         setDrawnCard(unvisitedPlanes[counter].imageUrl)
+        console.log(unvisitedPlanes[counter])
         if (counter != 0) {
             setVisitedPlanes([...visitedPlanes, unvisitedPlanes.shift()])
         }
         setCounter(counter + 1)
-        console.log(visitedPlanes)
     }
 
     const consol = () => {
@@ -55,16 +55,16 @@ const UserLanding = (props) => {
 
             <img src={drawnCard} />
 
-            {/* {unvisitedPlanes.map((item) => {
+            {visitedPlanes.map((item) => {
                 return (
                     <div key={item.name + item.originalText}>
                         <img
                             src={item.imageUrl}
-                            style={{ height: '500px', width: '700px' }}
+                            style={{ height: '50px', width: '70px' }}
                         />
                     </div>
                 )
-            })} */}
+            })}
         </div>
     )
 }
