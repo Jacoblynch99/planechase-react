@@ -16,6 +16,7 @@ import {
 } from '@material-ui/core'
 import React, { useState, useEffect } from 'react'
 
+// importing lodash for easy shuffling with out excess code.
 const _ = require('lodash')
 
 const UserLanding = (props) => {
