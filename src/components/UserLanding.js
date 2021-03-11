@@ -26,6 +26,7 @@ const UserLanding = (props) => {
     const [counter, setCounter] = useState(0)
     const [visitedPlanes, setVisitedPlanes] = useState([])
 
+    // uses axios to get planes when page first loads
     useEffect(() => {
         props.getPlanes()
     }, [])
