@@ -37,6 +37,7 @@ const UserLanding = (props) => {
         setUnvisitedPlanes(_.shuffle(tempArr))
     }
 
+    // displays card from the front of the array
     const drawCard = () => {
         setDrawnCard(unvisitedPlanes[counter].imageUrl)
         console.log(unvisitedPlanes[counter])
