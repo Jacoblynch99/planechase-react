@@ -19,6 +19,7 @@ import React, { useState, useEffect } from 'react'
 // importing lodash for easy shuffling with out excess code.
 const _ = require('lodash')
 
+// displaying cards one at a time using a draw card button to cycle through
 const UserLanding = (props) => {
     const [unvisitedPlanes, setUnvisitedPlanes] = useState([])
     const [drawnCard, setDrawnCard] = useState('')
