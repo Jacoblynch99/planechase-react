@@ -31,6 +31,7 @@ const UserLanding = (props) => {
         props.getPlanes()
     }, [])
 
+    // takes in the default order that the cards come in and randomizes it as well as setting unvistedPlanes hook
     const shuffleDeck = () => {
         let tempArr = props.cards
 
