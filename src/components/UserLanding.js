@@ -53,6 +53,7 @@ const UserLanding = (props) => {
         console.log(unvisitedPlanes)
     }
 
+    // display jsx elements here
     return (
         <div style={{ height: '100vh', width: '100vw' }}>
             <button onClick={consol}>console</button>
