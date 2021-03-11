@@ -48,6 +48,7 @@ const UserLanding = (props) => {
         setCounter(counter + 1)
     }
 
+    // just a console for testing. MUST REMOVE WHEN PROJECT IS DONE!!!
     const consol = () => {
         console.log(unvisitedPlanes)
     }
