@@ -1,5 +1,6 @@
 import axios from 'axios'
 
+// Axios call that fetches planes from the set: Planechase Anthology Set/OPCA
 export const getPlanes = () => {
     return function (dispatch) {
         axios
