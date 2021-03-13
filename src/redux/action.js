@@ -18,6 +18,8 @@ export const getPlanes = () => {
     }
 }
 
+// Axios call that fetches cards from the Archenemy set eventually, still a work in progress
+
 // export const getArchenemy = () => {
 //     return function (dispatch) {
 //         axios.get(`/users/tickets`).then((res) => {
