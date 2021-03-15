@@ -9,6 +9,7 @@ const mapStateToProps = (state) => {
     }
 }
 
+// maps axios call from action.js to a local state in this container.
 const mapDispatchToProps = (dispatch) => {
     return {
         getPlanes: () => dispatch(getPlanes()),
