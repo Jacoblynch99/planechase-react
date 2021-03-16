@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux'
 
+// takes axios call
 const planes = (state = [], action) => {
     switch (action.type) {
         case 'GET_PLANES':
