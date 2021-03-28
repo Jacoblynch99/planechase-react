@@ -59,7 +59,7 @@ const UserLanding = (props) => {
             <button onClick={consol}>console</button>
             <button onClick={shuffleDeck}>Shuffle Deck</button>
             <button onClick={drawCard}>Draw Card</button>
-
+            {/* display drawnd crad here */}
             <img src={drawnCard} />
 
             {visitedPlanes.map((item) => {
