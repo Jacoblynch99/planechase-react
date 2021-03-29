@@ -61,7 +61,7 @@ const UserLanding = (props) => {
             <button onClick={drawCard}>Draw Card</button>
             {/* display drawnd crad here */}
             <img src={drawnCard} />
-
+            {/* mapping cards here */}
             {visitedPlanes.map((item) => {
                 return (
                     <div key={item.name + item.originalText}>
