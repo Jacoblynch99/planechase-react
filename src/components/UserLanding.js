@@ -56,6 +56,7 @@ const UserLanding = (props) => {
     // display jsx elements here
     return (
         <div style={{ height: '100vh', width: '100vw' }}>
+            {/* testing software, remove when done */}
             <button onClick={consol}>console</button>
             <button onClick={shuffleDeck}>Shuffle Deck</button>
             <button onClick={drawCard}>Draw Card</button>
