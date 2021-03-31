@@ -58,6 +58,7 @@ const UserLanding = (props) => {
         <div style={{ height: '100vh', width: '100vw' }}>
             {/* testing software, remove when done */}
             <button onClick={consol}>console</button>
+            {/* shuffle deck array in random order */}
             <button onClick={shuffleDeck}>Shuffle Deck</button>
             <button onClick={drawCard}>Draw Card</button>
             {/* display drawnd crad here */}
