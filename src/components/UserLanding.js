@@ -60,6 +60,7 @@ const UserLanding = (props) => {
             <button onClick={consol}>console</button>
             {/* shuffle deck array in random order */}
             <button onClick={shuffleDeck}>Shuffle Deck</button>
+            {/* display the front of the card array */}
             <button onClick={drawCard}>Draw Card</button>
             {/* display drawnd crad here */}
             <img src={drawnCard} />
