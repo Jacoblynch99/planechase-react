@@ -79,4 +79,5 @@ const UserLanding = (props) => {
     )
 }
 
+// Exports my component
 export default UserLanding
