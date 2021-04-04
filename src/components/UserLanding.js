@@ -66,6 +66,7 @@ const UserLanding = (props) => {
             <img src={drawnCard} />
             {/* mapping cards here */}
             {visitedPlanes.map((item) => {
+                // returns jsx elements to the front of the page
                 return (
                     <div key={item.name + item.originalText}>
                         <img
