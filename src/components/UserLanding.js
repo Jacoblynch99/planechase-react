@@ -14,6 +14,7 @@ import {
     DialogActions,
     Container,
 } from '@material-ui/core'
+import { SelectAllRounded } from '@material-ui/icons'
 import React, { useState, useEffect } from 'react'
 
 // importing lodash for easy shuffling with out excess code.
@@ -69,6 +70,7 @@ const UserLanding = (props) => {
             {visitedPlanes.map((item) => {
                 // returns jsx elements to the front of the page
                 return (
+                    // container for the current card select all around
                     <div key={item.name + item.originalText}>
                         <img
                             src={item.imageUrl}
