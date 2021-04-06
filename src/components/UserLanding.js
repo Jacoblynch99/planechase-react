@@ -55,6 +55,7 @@ const UserLanding = (props) => {
 
     // display jsx elements here
     return (
+        // div container for bulk of website
         <div style={{ height: '100vh', width: '100vw' }}>
             {/* testing software, remove when done */}
             <button onClick={consol}>console</button>
