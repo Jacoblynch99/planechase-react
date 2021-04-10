@@ -74,6 +74,7 @@ const UserLanding = (props) => {
                     <div key={item.name + item.originalText}>
                         {/* an img tag that contains the card info */}
                         <img
+                            // src defines the image within the img tag
                             src={item.imageUrl}
                             style={{ height: '50px', width: '70px' }}
                         />
