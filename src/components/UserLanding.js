@@ -76,6 +76,7 @@ const UserLanding = (props) => {
                         <img
                             // src defines the image within the img tag
                             src={item.imageUrl}
+                            // inline css styling
                             style={{ height: '50px', width: '70px' }}
                         />
                     </div>
