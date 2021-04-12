@@ -41,6 +41,7 @@ const UserLanding = (props) => {
 
     // displays card from the front of the array
     const drawCard = () => {
+        // sets global drawn card state
         setDrawnCard(unvisitedPlanes.shift().imageUrl)
         console.log(unvisitedPlanes[counter])
         // if (counter != 0) {
