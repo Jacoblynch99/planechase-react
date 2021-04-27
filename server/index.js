@@ -23,7 +23,7 @@ app.use(function (req, res, next) {
     next()
 })
 
-const port = process.env.PORT || 4001
+const port = process.env.PORT || 9001
 
 app.use(bodyParser.json())
 app.use('/users', usersRouter)
